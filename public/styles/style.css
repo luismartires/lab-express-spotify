@@ -16,11 +16,16 @@ html {
 
 .main-div-h1 {
     margin-bottom: 40px;
-    font-size: 100px;
+    font-size: 60px;
     color: white;
-    text-shadow: 2px 2px black
+    text-shadow: 2px 2px black;
+    text-decoration: none;
 }
 
+.main-div-h1:hover {
+    text-shadow: 4px 4px black;
+    outline: none;
+}
 
 .contacts {
     background-color:  rgba(0, 0, 0, 0.6);
@@ -31,11 +36,7 @@ html {
     font-size: 10px;
     font-family: Dancing Script;
     justify-content: flex-end;
-    padding: 5px 15px 5px 0;
-}
-
-.contacts h2 {
-    padding-left: 5px;
+    padding: 5px 5px 5px 0;
 }
 
 .contacts img {
@@ -70,6 +71,7 @@ html {
  padding: 10px 400px 10px 10px;
  border-radius: 2%;
  border: 1px solid lightgrey;
+ outline: none;
 }
 
 .main-div-form-btn {
@@ -80,6 +82,13 @@ html {
     font-size: 15px;
     margin-top: 10px;
     border-radius: 1%;
+    border: 1px solid #FA6863;
+}
+
+.main-div-form-btn:hover {
+    cursor: pointer;
+    background-color: rgba(200,83,79);
+    outline: none;
 }
 
 
@@ -138,8 +147,14 @@ padding: 10px;
 border: 1px solid #FA6863;
 margin-top: 20px;
 font-weight: 700;
+outline: none;
 }
 
+.div-search-result-details button:hover{
+cursor: pointer;
+background-color: rgba(200,83,79);
+outline: none;
+}
 
 /* TRACKS */
 
@@ -156,4 +171,8 @@ font-weight: 700;
     width: 600px;
     align-items: center;
     display: flex;
+}
+
+.div-h2-audio-box audio {
+    outline: none;
 }

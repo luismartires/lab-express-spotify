@@ -50,9 +50,10 @@ res.render("albums", {albums, artistName});
 
 app.get("/tracks/:trackId", async (req, res) => {
   let trackId = req.params.trackId;
+
   const result = await spotifyApi.getAlbumTracks(trackId)
   let tracks = result.body.items;
-
+ 
   const album = await spotifyApi.getAlbum(trackId)
   const albumName = album.body.name;
 
