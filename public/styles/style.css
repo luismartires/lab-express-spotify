@@ -36,7 +36,7 @@ html {
     font-size: 10px;
     font-family: Dancing Script;
     justify-content: flex-end;
-    padding: 5px 5px 5px 0;
+    padding: 5px 10px 5px 0;
 }
 
 .contacts img {
@@ -101,12 +101,19 @@ html {
     background-color: black;
     color: white;
     border-top: 2px solid #FA6863;
-    border-bottom: 3px solid #FA6863;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 30px;
 }
 
+.div-search-result-p {
+    background-color: white;
+    color: black;
+    transform: skewX(-15deg);
+    margin-right: 180px;
+    margin-left: 180px;
+    margin-top: 5px;
+}
 
 .div-search-result-box {
     display: flex;
